@@ -1,0 +1,41 @@
+{
+  "name": "react-base-project",
+  "version": "1.0.0",
+  "description": "ArquiPis ReactJS Base Project",
+  "main": "index.js",
+  "repository": "https://github.com/eb16/react-base-project",
+  "author": "ArquiPis",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "pretty": "prettier --write --tab-width 4 \"src/**/*.js\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run pretty",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.4",
+    "prettier": "1.18.2"
+  }
+}

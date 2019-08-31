@@ -13,17 +13,16 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "pretty": "prettier --write --tab-width 2 \"src/**/*.js\"",
-    "precommit": "lint-staged"
+    "pre-commit": "lint-staged"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn pre-commit"
     }
   },
   "lint-staged": {
     "*.{js,md,css,html}": [
-      "prettier --trailing-comma es5 --single-quote --write",
+      "eslint --ext .jsx,.js src",
       "git add"
     ],
     "yarn.lock": [

@@ -7,6 +7,7 @@ module.exports = {
     'src/index.jsx': [path.join(__dirname, './src/index.jsx')],
   },
   resolve: {
+    extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
       '../../theme.config$': path.join(__dirname, '/semantic-ui/theme.config'),
     },

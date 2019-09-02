@@ -1,3 +1,35 @@
 /*******************************
      User Global Variables
 *******************************/
+
+// NeoCoast fonts (both google fonts)
+@montserrat: 'Montserrat', sans-serif;
+@source-sans-pro: 'Source Sans Pro', sans-serif;
+
+// Gradient background
+@first-gradient:  #f5faff;
+@second-gradient: #dcecff;
+@main-gradient-bg:  linear-gradient(65deg, @first-gradient, @second-gradient);
+
+// NeoCoast colors
+@white:           #ffffff;
+@hover-white:     #F6FAFF;
+@background-blue: #042152;
+@primary-blue:    #0864ff;
+@secondary-blue:  #4d7fd5;
+@details-blue:    #659eff;
+@hover-blue:      #1B5FD0;
+@grey-blue:       #748ab0;
+@light-grey:      #eef4ff;
+@error-red:       #ff144d;
+
+// Colors for pills, charts, etc
+@chart-blue-1: #ace3fb;
+@chart-blue-2: #88b2fd;
+@chart-yellow: #fdd088;
+@chart-green:  #96e6b6;
+@chart-orange: #fd9688;
+@chart-pink:   #deadea;
+
+// Borders
+@input-border-color: #9eadc7;

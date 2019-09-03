@@ -22,8 +22,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,md,css,html}": [
+    "*.{js,md,html}": [
       "eslint --ext .jsx,.js src",
+      "git add"
+    ],
+    "*.{css,scss,sass,html}": [
       "stylelint",
       "git add"
     ],

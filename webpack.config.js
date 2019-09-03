@@ -8,9 +8,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
-    alias: {
-      '../../theme.config$': path.join(__dirname, '/semantic-ui/theme.config'),
-    },
   },
   module: {
     rules: [
@@ -30,8 +27,15 @@ module.exports = {
         ],
       },
       {
-        test: /\.(less)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader'],
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
       },
       {
         test: /\.jpe?g$|\.gif$|\.ico$|\.png$|\.svg$/,

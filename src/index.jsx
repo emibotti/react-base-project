@@ -1,12 +1,11 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import 'semantic-ui-less/semantic.less'
-import { Header } from 'semantic-ui-react'
+import { TestingContainer } from './scenes/TestingContainer'
 
 class App extends React.Component {
   render() {
-    return <Header as="h1">Semantic UI LESS!</Header>
+    return <TestingContainer />
   }
 }
 

@@ -1,12 +1,6 @@
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { TestingContainer } from './scenes/TestingContainer'
 
-class App extends React.Component {
-  render() {
-    return <TestingContainer />
-  }
-}
+const App = () => <h1>New component!</h1>
 
 ReactDOM.render(<App />, document.getElementById('mount'))
